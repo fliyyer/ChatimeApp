@@ -35,7 +35,7 @@ function LoginPage() {
               alt="Logo"
             />
             <h4 className="myApp mt-2">
-              <strong className="text-centery">Chatime Apps</strong>
+              <strong className="text-centery">Chatime APP</strong>
             </h4>
           </div>
         </div>
