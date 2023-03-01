@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --accent-color: #6F42C1;
+    --foreground-color: #0F1419;
+    --background-color: white;
+    --gray-dark-color: #66757F;
+    --gray-light-color: #edeff1;
+  }
+  
+  body {
+    color: var(--foreground-color);
+    background-image:url(../assets/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .loading {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .navigation {
+    padding: 6px;
+    min-height: 55px;
+    }
+
+    .me-auto a {
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--foreground-color);
+    }
+
+    .me-auto a:hover{
+      color: #6F42C1;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-logout {
+      font-size: 36px;
+    }
+
+  .login-page, .register-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+  
+  .login-page__hero, .register-page__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 160px;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
+  
+  .login-page__main, .register-page__main {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 64px;
+  }
+  
+  .login-page__main h2, .register-page h2 {
+    font-weight: 300;
+    font-size: 48px;
+  }
+  
+  .login-input input, .register-input input {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 8px;
+    margin: 8px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-dark-color);
+  }
+  
+  .login-input button, .register-input button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border: 0;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .home-page {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--background-color);
+  }
+  
+  @media screen and (min-width: 850px) {
+    .login-page, .register-page {
+      grid-template-columns: 1.25fr 1fr;
+    }
+  }
+
+  .thread-category {
+    padding: 16px;
+    width: 80vh;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgb(243, 243, 243);
+    border-bottom: 0;
+  }
+
+  .thread-item {
+    padding: 16px;
+    width: 80vh;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgb(243, 243, 243);
+    border-bottom: 0;
+  }
+  
+  .thread-item:last-of-type {
+    border-bottom: 1px solid rgb(243, 243, 243);
+  }
+  
+  .thread-item:hover {
+    background-color: var(--gray-light-color);
+  }
+  
+  .thread-item__user-photo img {
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  
+  .thread-item__detail {
+    flex: 1;
+  }
+
+  .detail-page-thread {
+    padding: 28px;
+    background-color: var(--background-color);
+  }
+  
+  .thread-item__detail header {
+    display: flex;
+    margin-bottom: 4px;
+  }
+  
+  .thread-item__user-info {
+    flex: 1;
+  }
+  
+  .thread-item__detail .thread-item__created-at {
+    color: var(--gray-dark-color);
+    font-size: 15px;
+  }
+  
+  .thread-item__detail .thread-item__user-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .thread-item__detail .thread-item__user-id {
+    font-size: 15px;
+    color: var(--gray-dark-color);
+  }
+  
+  .thread-item__detail .thread-item__title {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .thread-item__detail .thread-item__category {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .thread-item__detail .thread-item__body {
+    font-size: 15px;
+  }
+
+  .icon-item {
+    display: flex;
+    gap: 15px;
+  }
+
+  .icon-item p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 4px;
+  }
+
+  .icon-item p button {
+    display: flex;
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .move-register a {
+    text-decoration: none;
+    font-weight: 500;
+  }
