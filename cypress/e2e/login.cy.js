@@ -5,8 +5,6 @@
  *   - should display alert when email is empty
  *   - should display alert when password is empty
  *   - should display alert when email and password are wrong
- *   - should display homepage when username and password are correct
- *   - should display alert when email not valid
  */
 
 describe("Login spec", () => {
